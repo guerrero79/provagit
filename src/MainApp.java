@@ -33,6 +33,7 @@ public class MainApp {
 					}while(readingError);
 					break;
 				case 3:
+					deleteUser();
 					break;
 				case 0:
 					break;
@@ -107,5 +108,15 @@ public class MainApp {
 		user.setAge(newOne.getAge());
 		System.out.println("Changes done!");
 	}
+	
+	/**
+	 * Borrar cursos
+	 */
+	 
+	public static void deleteUser(){
+		for(int i=0; i<arrayUsers.length; i++){
+			arrayUsers[i] = null;
+		}
 
+	}
 }
